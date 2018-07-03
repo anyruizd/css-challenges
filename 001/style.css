@@ -1,0 +1,95 @@
+:root {
+  --main-color: #ffff;
+  --box-shadow: 0 0 13px 0 rgba(0,0,0,0.2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.frame {
+  align-items: center;
+  background: linear-gradient(to top right, #43389F 0%, #4ec6ca 100%);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  width: 400px;
+}
+
+.number {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  margin-bottom: -5px;
+  position: relative;
+  width: 200px;
+  z-index: 1;
+}
+
+.one, .one::before {
+  background-color: var(--main-color);
+  border-radius: 3px;
+  box-shadow: var(--box-shadow);
+}
+
+.one {
+  height: 100px;
+  position: absolute;
+  width: 24px;
+}
+
+.one::before {
+  content: '';
+  height: 40px;
+  position: absolute;
+  transform: rotate(50deg) translateX(-10px) translateY(12px);
+  width: 20px;
+  z-index: -1;
+}
+
+.zero-one, .zero-two {
+  border: 24px solid var(--main-color);
+  border-radius: 100%;
+  box-shadow: var(--box-shadow);
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+
+.zero-one {
+  right: 0px;
+  z-index: -1;
+}
+
+.zero-two {
+  content: '';
+  right: 83px;
+  top: 0;
+  z-index: -1;
+}
+
+.text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  justify-content: center;
+  color: var(--main-color);
+}
+
+.big {
+  font-size: 81px;
+  font-weight: 700;
+  margin-left: -4px;
+  line-height: 75px;
+}
+
+.small {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 20px;
+}
