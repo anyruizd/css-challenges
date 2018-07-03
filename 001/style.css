@@ -55,8 +55,8 @@
   border: 24px solid var(--main-color);
   border-radius: 100%;
   box-shadow: var(--box-shadow);
-  position: absolute;
   height: 100px;
+  position: absolute;
   width: 100px;
 }
 
@@ -74,18 +74,18 @@
 
 .text {
   align-items: center;
+  color: var(--main-color);
   display: flex;
   flex-direction: column;
   font-family: 'Open Sans', sans-serif;
   justify-content: center;
-  color: var(--main-color);
 }
 
 .big {
   font-size: 81px;
   font-weight: 700;
-  margin-left: -4px;
   line-height: 75px;
+  margin-left: -4px;
 }
 
 .small {
