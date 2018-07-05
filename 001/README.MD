@@ -17,4 +17,4 @@ Another thing I learned while creating number 1 was that I needed to set the sta
     z-index: -1;
 }
 ```
-When creating the missing numbers (00) I wanted to use also a div for the first O and a pseudo-element for the second one, but I don't know why, when I was trying to give them a border, the pseudo-element growth out of control, so I decided to use a div for each 0. 
+When creating the missing numbers (00) I wanted to use also a div for the first 0 and a pseudo-element for the second one, but I don't know why, when I was trying to give them a border, the pseudo-element growth out of control, so I decided to use a div for each 0. 
