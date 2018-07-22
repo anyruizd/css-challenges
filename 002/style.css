@@ -1,5 +1,5 @@
 :root {
-  --animation-timing: 1s;
+  --animation-timing: .7s;
   --background-color: #3FAF82;
   --box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
   --main-color: #FFFF;
