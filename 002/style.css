@@ -1,0 +1,107 @@
+:root {
+  --animation-timing: 1s;
+  --background-color: #3FAF82;
+  --box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+  --main-color: #FFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  align-items: center;
+  background: var(--background-color);
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  width: 400px;
+}
+
+.hamburger {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  position: relative;
+  width: 80px;
+}
+
+/* .animation-off .line {
+  animation: none;
+} */
+
+.line{
+  background-color: var(--main-color);
+  border-radius: 3px;
+  box-shadow: var(--box-shadow);
+  content: '';
+  height: 8px;
+  position: absolute;
+  width: 80px;
+}
+
+.line2 {
+  top: 14px;
+}
+
+.line3 {
+  bottom: 14px;
+}
+
+.menu--open .line1 {
+  animation: line1 var(--animation-timing) forwards;
+}
+
+.menu--open .line2 {
+  animation: line2 var(--animation-timing) forwards;
+}
+
+.menu--open .line3 {
+  animation: line3 var(--animation-timing) forwards;
+}
+
+.menu--close .line1 {
+  animation: line1-reverse var(--animation-timing);
+}
+
+.menu--close .line2 {
+  animation: line2-reverse var(--animation-timing);
+}
+
+.menu--close .line3 {
+  animation: line3-reverse var(--animation-timing);
+}
+
+@keyframes line1 {
+  from {opacity:1; transform: scaleX(1);}
+  to {opacity:0; transform:scaleX(0);}
+}
+
+@keyframes line2 {
+  from {transform: translateY(0);}
+  to {transform: translateY(22px);}
+}
+
+@keyframes line3 {
+  from {transform: translateY(0);}
+  to {transform: translateY(-22px);}
+}
+
+@keyframes line1-reverse {
+  from {opacity:0; transform:scaleX(0);}
+  to {opacity:1; transform: scaleX(1);}
+}
+
+@keyframes line2-reverse {
+  from {transform: translateY(22px);}
+  to {transform: translateY(0);}
+}
+
+@keyframes line3-reverse {
+  from {transform: translateY(-22px);}
+  to {transform: translateY(0);}
+}
