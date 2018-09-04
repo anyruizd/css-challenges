@@ -7,3 +7,6 @@ You can see the codepen version [here](https://codepen.io/anylerolero/full/MXxXa
 
 ### Challenge 002
 You can see the codepen version [here](https://codepen.io/anylerolero/pen/gjgqGd) and what I learned [here](https://github.com/anyruizd/cm-challenges/tree/master/002#what-i-learned).
+
+### Challenge 003
+You can see the codepen version [here](https://codepen.io/anylerolero/pen/wEGRMG) and what I learned [here](https://github.com/anyruizd/cm-challenges/tree/master/003#what-i-learned).
