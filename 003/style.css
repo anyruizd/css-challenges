@@ -1,0 +1,146 @@
+:root {
+  --animation-curve: cubic-bezier(.4,0,.49,1);
+  --animation-timing: 4s;
+  --background-color: #272c34;
+  --ground-color: #f0de75;
+  --pyramid-dark-color: #dddada;
+  --pyramid-light-color: #f4f4f4;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --sky-color: #7ddffc;
+  --sun-dark-color: #f57209;
+  --sun-light-color: #ffef00;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  align-items: center;
+  background: var(--background-color);
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  position: relative;
+  width: 400px;
+}
+
+.circle {
+  background: var(--sky-color);
+  border-radius: 100%;
+  height: 180px;
+  overflow: hidden;
+  width: 180px;
+  z-index: 1;
+}
+
+.sun {
+  animation: sunset var(--animation-timing) var(--animation-curve) infinite;
+  background-color: var(--sun-light-color);
+  border-radius: 100%;
+  height: 34px;
+  left: 82px;
+  position: absolute;
+  top: 210px;
+  transform-origin: 115px 30px;
+  width: 34px;
+}
+
+.pyramid {
+  animation: pyramid var(--animation-timing) var(--animation-curve) infinite;
+  border-bottom: 58px solid var(--pyramid-dark-color);
+  border-left: 58px solid transparent;
+  border-right: 58px solid transparent;
+  height: 0;
+  position: absolute;
+  right: 139px;
+  top: 176px;
+  width: 0;
+}
+
+.pyramid::after {
+  animation: pyramid var(--animation-timing) var(--animation-curve) infinite reverse;
+  border-bottom: 58px solid var(--pyramid-light-color);
+  border-left: 58px solid transparent;
+  border-right: 17px solid transparent;
+  content: '';
+  height: 0;
+  width: 0;
+  z-index: 1;
+  position: absolute;
+  left: -58px;
+}
+
+.shadow {
+  animation: shadow var(--animation-timing) var(--animation-curve) infinite;
+  border-left: 58px solid transparent;
+  border-right: 58px solid transparent;
+  height: 0;
+  position: absolute;
+  right: 139px;
+  top: 234px;
+  width: 0;
+  border-top: 29px solid var(--shadow-color);
+  transform-origin: left top;
+  transform: skew(75deg, 0deg);
+}
+
+.ground {
+  background: var(--ground-color);
+  clip-path: circle(50% at 90px -34px);
+  height: 180px;
+  position: absolute;
+  top: 234px;
+  width: 180px;
+}
+
+/* Animations */
+
+@keyframes sunset {
+  0% { 
+    background-color: var(--sun-dark-color);
+    transform: rotate(0deg); 
+  }
+  30% { 
+    background-color: var(--sun-light-color); 
+  }
+  70% { 
+    background-color: var(--sun-light-color); 
+  }
+  100% { 
+    background-color: var(--sun-dark-color);
+    transform: rotate(180deg); 
+  }
+}
+
+@keyframes shadow {
+  0% { 
+    transform: skew(90deg, 0deg) scaleY(1);
+  }
+  30% { 
+    transform: skew(75deg, 0deg) scaleY(0.4);
+  }
+  70% { 
+    transform: skew(-75deg, 0deg) scaleY(1);
+  }
+  100% { 
+    transform: skew(-90deg, 0deg) scaleY(1);
+  }
+}
+
+@keyframes pyramid {
+  0% { 
+    border-bottom-color: var(--pyramid-dark-color);
+  }
+  30% { 
+    border-bottom-color: var(--pyramid-dark-color);
+  }
+  70% { 
+    border-bottom-color: var(--pyramid-light-color);
+  }
+  100% { 
+    border-bottom-color: var(--pyramid-light-color);
+  }
+}
