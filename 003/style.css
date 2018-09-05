@@ -30,7 +30,7 @@
 .sky {
   animation: sky var(--animation-timing) var(--animation-curve) infinite;
   background: var(--sky-color);
-  border-radius: 100%;
+  border-radius: 50%;
   height: 180px;
   overflow: hidden;
   width: 180px;
@@ -40,7 +40,7 @@
 .sun {
   animation: sunset var(--animation-timing) var(--animation-curve) infinite;
   background-color: var(--sun-light-color);
-  border-radius: 100%;
+  border-radius: 50%;
   height: 34px;
   left: 82px;
   position: absolute;

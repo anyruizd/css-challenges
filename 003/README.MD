@@ -4,7 +4,7 @@ This challenge consisted in recreating the movement of the sun throughout a day 
 For this purpose, I divided the whole picture into small pieces, given by the sky, the sun, the pyramid, the ground and the pyramid shadow, all embedded in a circled container.
 
 ### Sky
-The main container served as the sky. To create the sky, I used a box with a 100% `border-radius` and assigned the corresponding color. 
+The main container served as the sky. To create the sky, I used a box with a 50% `border-radius` and assigned the corresponding color. I read [here](http://jessica-eldredge.com/2014/09/07/border-radius-50-or-100-percent/) why not to use 100% as `border-radius` value.
 
 ### Sun
 As before, to create the sun I used a box with a 100% `border-radius`. To make the animation I read [here](https://stackoverflow.com/questions/37902679/transform-rotate-and-translate-of-circle-img-inside-another-img) and [here](https://stackoverflow.com/questions/46949940/css-animate-object-in-curved-path) that to rotate and translate the sun across an arc, the key concept is the `transform-origin` CSS property, which allows setting the transformation (rotation in this case) axis to a point different from the element center. That is to say, without the origin modification, the element would have rotated around its center.
@@ -30,5 +30,5 @@ To create the ground I read [here](https://developer.mozilla.org/en-US/docs/Web/
 ### Pyramid shadow
 To create the pyramid projection on the floor, I made a triangle by using the prior technique (a box with zero width and height and colored borders) and I applied a skew transformation. Besides, it was necessary to change the transformation axis to be left-top (and not center-center) by using `transform-origin` property.
 
-Finally, the big remember for this challenge is KEYFRAMES CLOSING BRACKETS DON'T USE THE SEMICOLON 😛
+Finally, the big remember for this challenge is KEYFRAMES CLOSING BRACKETS DON'T USE THE SEMICOLON!!! 😛
 
