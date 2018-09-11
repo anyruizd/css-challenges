@@ -1,0 +1,77 @@
+:root {
+  --animation-curve: cubic-bezier(.21,.98,.6,.99);
+  --animation-timing: 2s;
+  --background-color: #e36365;
+  --main-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  align-items: center;
+  background: var(--background-color);
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  position: relative;
+  width: 400px;
+}
+
+.dot {
+  border-radius: 50%;
+  box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.3);
+  position: absolute;
+}
+
+.dot1 {
+  animation: first-dot var(--animation-timing) var(--animation-curve) infinite alternate;
+  background-color: var(--main-color);
+  height: 90px;
+  width: 90px;
+}
+
+.dot2 {
+  animation: second-dot var(--animation-timing) var(--animation-curve) infinite alternate;
+  background-color: var(--main-color);
+  height: 60px;
+  width: 60px;
+}
+
+.dot3 {
+  animation: third-dot var(--animation-timing) var(--animation-curve) infinite alternate;
+  background-color: var(--main-color);
+  height: 30px;
+  width: 30px;
+}
+
+@keyframes third-dot {
+  0%, 70% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes second-dot {
+  0%, 35% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes first-dot {
+  0%, 10% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
