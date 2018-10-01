@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color : #42A7A1;
+  --blue-line: #7BA2FF;
+  --body-font-color: #606060;
+  --main-color: #fff;
+  --header-color: #F1BA64;
+  --line-color: #F2F2F2;
+  --red-line: #FA7373;
+}
+
+.card-container {
+  align-items: center;
+  background: var(--background-color);
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  position: relative;
+  width: 400px;
+}
+
+.card {
+  background: var(--main-color);
+  border-radius: 3px;
+  height: 220px;
+  margin-right: 1px;
+  margin-top: 1px;
+  width: 280px;
+}
+
+.card__header {
+  background: var(--header-color);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  height: 60px;
+  width: 100%;
+}
