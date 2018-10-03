@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,43 @@
   <link rel="stylesheet" href="style.css">
   <title>Challenge 005</title>
 </head>
+
 <body>
   <div class="card-container">
     <div class="card">
-    <header class="card__header"></header>
-    <section class="card__body"></section>
+      <header class="card__header"></header>
+      <section class="card__body graph-container">
+        <div class="graph__legends"></div>
+        <div class="graph__lines">
+          <div class="graph__line graph__line-1"></div>
+          <div class="graph__line graph__line-2"></div>
+          <div class="graph__line graph__line-3"></div>
+          <div class="graph__data-line graph__data-line--blue">
+            <svg>
+              <polyline points="9,61
+                50,50
+                90,65 
+                130,55 
+                171,61 
+                211,74 
+                251,64" />
+              <g class="data" data-setname="Our first data set">
+                <circle cx="9" cy="61" r="3"></circle>
+                <circle cx="50" cy="50" r="3"></circle>
+                <circle cx="90" cy="65" r="3"></circle>
+                <circle cx="130" cy="55" r="3"></circle>
+                <circle cx="171" cy="61" r="3"></circle>
+                <circle cx="211" cy="74" r="3"></circle>
+                <circle cx="251" cy="64" r="3"></circle>
+              </g>
+            </svg>
+          </div>
+          <div class="graph__data-line graph__data-line--red"></div>
+        </div>
+        <div class="graph__axes"></div>
+      </section>
     </div>
   </div>
 </body>
+
 </html>

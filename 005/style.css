@@ -40,3 +40,31 @@
   height: 60px;
   width: 100%;
 }
+
+.graph-container {
+  position: relative;
+}
+
+.graph__lines {
+  height: 80px;
+  left: 10px;
+  position: absolute;
+  top: 41px;
+  width: 260px;
+}
+
+.graph__data-line {
+  width: 280px;
+}
+
+.graph__data-line--blue polyline {
+  fill: none;
+  stroke: #0074d9;
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+.data {
+  fill: red;
+  stroke-width: 1; 
+}
