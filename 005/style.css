@@ -8,9 +8,9 @@
   --background-color : #42A7A1;
   --blue-line: #7BA2FF;
   --body-font-color: #606060;
-  --main-color: #fff;
   --header-color: #F1BA64;
   --line-color: #F2F2F2;
+  --main-color: #fff;
   --red-line: #FA7373;
 }
 
@@ -64,7 +64,7 @@
   stroke-width: 2;
 }
 
-.data {
+.graph__data-points {
   fill: red;
   stroke-width: 1; 
 }
