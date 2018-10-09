@@ -49,22 +49,32 @@
   height: 80px;
   left: 10px;
   position: absolute;
-  top: 41px;
+  top: 46px;
   width: 260px;
 }
 
 .graph__data-line {
+  fill: none;
+  position: absolute;
+  stroke-linecap: round;
+  stroke-width: 2;
   width: 280px;
 }
 
 .graph__data-line--blue polyline {
-  fill: none;
-  stroke: #0074d9;
-  stroke-linecap: round;
-  stroke-width: 2;
+  stroke: var(--blue-line);
 }
 
-.graph__data-points {
-  fill: red;
-  stroke-width: 1; 
+.graph__data-points--blue {
+  fill: var(--blue-line);
+  stroke-width: 2; 
+}
+
+.graph__data-line--red polyline {
+  stroke: var(--red-line);
+}
+
+.graph__data-points--red {
+  fill: var(--red-line);
+  stroke-width: 2; 
 }
