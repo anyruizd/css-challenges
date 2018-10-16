@@ -11,7 +11,12 @@
   --header-color: #F1BA64;
   --line-color: #F2F2F2;
   --main-color: #fff;
+  --main-font: 'Open Sans';
   --red-line: #FA7373;
+}
+
+body {
+  font-family: var(--main-font);
 }
 
 .card-container {
@@ -37,19 +42,62 @@
   background: var(--header-color);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  color: var(--main-color);
+  display: flex;
   height: 60px;
   width: 100%;
 }
 
+.card__title {
+  background-color: antiquewhite;
+  width: 120px;
+  height: 20px;
+  /* margin-left: 15px;
+  margin-top: 10px; */
+}
+
+.card__date {
+  background-color: #7BA2FF;
+  width: 85px;
+  height: 16px;
+  /* margin-left: 15px;
+  margin-top: 28px; */
+}
+
+.card__type {
+  background-color: #FA7373;
+  height: 15px;
+  width: 46px;
+/*   margin-left: 221px;
+  margin-top: 12px; */
+}
+
+.card__value {
+  background-color: aquamarine;
+  width: 100%;
+}
+
+.card__text--big {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.card__text--small {
+  font-weight: 400;
+  font-size: 11px;
+}
+
 .graph-container {
   position: relative;
+  height: 160px;
 }
 
 .graph__lines {
   height: 80px;
   left: 10px;
   position: absolute;
-  top: 46px;
+  top: 42px;
   width: 260px;
 }
 
