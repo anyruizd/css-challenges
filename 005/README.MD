@@ -15,6 +15,8 @@ To style created lines, it was necessary to learn about some SVG properties:
 set to round.
 * The `points` property allows us to define the list of points required to draw the polyline. 
 
+# Creating the points
+
 Once the lines were created, the points were remarked by adding a new SVG bashic shape, `circle` which has three main properties: 
 * The `cx` property defines the x-axis coordinate of the center of the element.
 * The `cy` property defines the y-axis coordinate of the center of the element.
