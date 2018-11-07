@@ -45,35 +45,12 @@ body {
   color: var(--main-color);
   display: flex;
   height: 60px;
+  position: relative;
   width: 100%;
 }
 
-.card__title {
-  background-color: antiquewhite;
-  width: 120px;
-  height: 20px;
-  /* margin-left: 15px;
-  margin-top: 10px; */
-}
-
-.card__date {
-  background-color: #7BA2FF;
-  width: 85px;
-  height: 16px;
-  /* margin-left: 15px;
-  margin-top: 28px; */
-}
-
-.card__type {
-  background-color: #FA7373;
-  height: 15px;
-  width: 46px;
-/*   margin-left: 221px;
-  margin-top: 12px; */
-}
-
-.card__value {
-  background-color: aquamarine;
+.card__text {
+  position: absolute;
   width: 100%;
 }
 
@@ -86,6 +63,26 @@ body {
 .card__text--small {
   font-weight: 400;
   font-size: 11px;
+}
+
+.card__title {
+  left: 15px;
+  top: 10px;
+}
+
+.card__date {
+  left: 15px;
+  top: 28px;
+}
+
+.card__type {
+  left: 221px;
+  top: 12px;
+}
+
+.card__value {
+  top: 26px;
+  left: 202px;
 }
 
 .graph-container {
@@ -109,13 +106,17 @@ body {
   width: 280px;
 }
 
+.graph__data-points {
+  cursor: pointer;
+  stroke-width: 2;
+}
+
 .graph__data-line--blue polyline {
   stroke: var(--blue-line);
 }
 
 .graph__data-points--blue {
   fill: var(--blue-line);
-  stroke-width: 2; 
 }
 
 .graph__data-line--red polyline {
@@ -124,5 +125,4 @@ body {
 
 .graph__data-points--red {
   fill: var(--red-line);
-  stroke-width: 2; 
 }
