@@ -5,14 +5,14 @@
 }
 
 :root {
-  --background-color : #42A7A1;
-  --blue-line: #7BA2FF;
+  --background-color: #42a7a1;
+  --blue-line: #7ba2ff;
   --body-font-color: #606060;
-  --header-color: #F1BA64;
-  --line-color: #F2F2F2;
+  --header-color: #f1ba64;
+  --line-color: #f2f2f2;
   --main-color: #fff;
-  --main-font: 'Open Sans';
-  --red-line: #FA7373;
+  --main-font: "Open Sans";
+  --red-line: #fa7373;
 }
 
 body {
