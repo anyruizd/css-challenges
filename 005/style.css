@@ -108,10 +108,11 @@ body {
 
 .graph__data-points {
   cursor: pointer;
+  position: relative;
   stroke-width: 2;
 }
 
-.graph__data-line--blue polyline {
+.graph__data-line--blue {
   stroke: var(--blue-line);
 }
 
@@ -119,10 +120,34 @@ body {
   fill: var(--blue-line);
 }
 
-.graph__data-line--red polyline {
+.graph__data-line--red {
   stroke: var(--red-line);
 }
 
 .graph__data-points--red {
   fill: var(--red-line);
+}
+
+/* .tooltip {
+  opacity:0;
+  transition: opacity 0.3s;
+  text-shadow:1px 1px 0px gray;
+}
+
+g.tooltip rect {
+  fill: lightblue;
+  stroke: gray;
+} */
+circle:hover + g.tooltip.css {
+opacity:1;
+}
+
+.tooltip path {
+  position: absolute;
+}
+
+text {
+  fill: black;
+  font-family: Tahoma;
+  font-size: 16pt;
 }
