@@ -128,26 +128,25 @@ body {
   fill: var(--red-line);
 }
 
-/* .tooltip {
+.tooltip {
+  height: 6px;
+  width: 6px;
   opacity:0;
   transition: opacity 0.3s;
-  text-shadow:1px 1px 0px gray;
+	
 }
 
 g.tooltip rect {
-  fill: lightblue;
-  stroke: gray;
-} */
+  fill: var(--blue-line);
+}
+
 circle:hover + g.tooltip.css {
 opacity:1;
 }
 
-.tooltip path {
-  position: absolute;
-}
-
 text {
-  fill: black;
-  font-family: Tahoma;
-  font-size: 16pt;
+  fill: white;
+	font-size: 11px;
+  font-weight: 600;
+  line-height: 11px;
 }
