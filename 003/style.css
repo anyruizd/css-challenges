@@ -1,3 +1,7 @@
+h1 {
+  color: red;
+  font-size: 50px;
+}
 :root {
   --animation-curve: cubic-bezier(.4,0,.49,1);
   --animation-timing: 4s;
@@ -17,14 +21,22 @@
   padding: 0;
 }
 
+body {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   align-items: center;
   background: var(--background-color);
   display: flex;
   height: 400px;
   justify-content: center;
+  margin-top: 10px;
   position: relative;
   width: 400px;
+  overflow: hidden;
 }
 
 .sky {
@@ -33,8 +45,8 @@
   border-radius: 50%;
   height: 180px;
   overflow: hidden;
+  position: absolute;
   width: 180px;
-  z-index: 1;
 }
 
 .sun {
@@ -42,10 +54,10 @@
   background-color: var(--sun-light-color);
   border-radius: 50%;
   height: 34px;
-  left: 82px;
+  left: -26px;
   position: absolute;
-  top: 210px;
-  transform-origin: 115px 30px;
+  top: 110px;
+  transform-origin: 116px 15px;
   width: 34px;
 }
 
@@ -56,8 +68,8 @@
   border-right: 58px solid transparent;
   height: 0;
   position: absolute;
-  right: 139px;
-  top: 176px;
+  right: 29px;
+  top: 66px;
   width: 0;
 }
 
@@ -80,8 +92,8 @@
   border-right: 58px solid transparent;
   height: 0;
   position: absolute;
-  right: 139px;
-  top: 234px;
+  right: 30px;
+  top: 124px;
   width: 0;
   border-top: 29px solid var(--shadow-color);
   transform-origin: left top;
@@ -94,7 +106,7 @@
   clip-path: circle(50% at 90px -34px);
   height: 180px;
   position: absolute;
-  top: 234px;
+  top: 124px;
   width: 180px;
 }
 
